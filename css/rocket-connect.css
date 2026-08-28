@@ -274,6 +274,9 @@
 .rc-impact-glyph--filter .rc-impact-glyph-box { inset: 29.17% 16.67%; }
 .rc-impact-glyph--filter .rc-impact-glyph-inner { inset: -10% -6.25%; }
 
+.rc-impact-glyph--trend .rc-impact-glyph-box { inset: 0; }
+.rc-impact-glyph--trend .rc-impact-glyph-inner { inset: 0; }
+
 .rc-impact-glyph--shield .rc-impact-glyph-box { inset: 10.89% 20%; }
 .rc-impact-glyph--shield .rc-impact-glyph-inner { inset: -5.33% -6.94%; }
 
