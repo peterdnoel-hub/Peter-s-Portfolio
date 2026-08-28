@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rocket Connect Case Study - UX/UI Redesign of Bid Desk by Peter Noel">
+  
+  <title>Rocket Connect | Peter Noel</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=20">
+  <link rel="stylesheet" href="css/rocket-connect.css?v=42">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="/" class="logo" aria-label="Home">
+      <svg width="54" height="50" viewBox="0 0 54 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M41 23.4473L40.7324 23.3076L27.5 16.3633V0.896484L53.5 16.9453V49.5H41V23.4473Z" fill="black" stroke="black"/>
+        <path d="M14 23.4473L13.7324 23.3076L0.5 16.3633V0.896484L26.5 16.9453V36.167H14V23.4473Z" fill="black" stroke="black"/>
+        <path d="M13 37.1667V49.4997H0.5V37.1667H13Z" fill="black" stroke="black"/>
+      </svg>
+    </a>
+    
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav-pill" id="site-nav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About me</a>
+      <a href="mailto:peterd.noel@gmail.com" class="nav-link nav-link--contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="rc-page">
+    <!-- Hero Section -->
+    <section class="rc-hero" data-animate="fade-up">
+      <img class="rc-hero-image" src="assets/rocket-hero.png?v=3" alt="Rocket Card Connect pair-off pipeline and review screens">
+    </section>
+
+    <!-- Content with Sidebar -->
+    <div class="rc-layout">
+      <!-- Sticky Sidebar Navigation -->
+      <aside class="rc-sidebar">
+        <nav class="rc-nav">
+          <a href="#tldr" class="rc-nav-link active">TL;DR</a>
+          <a href="#discovery" class="rc-nav-link">Discovery</a>
+          <a href="#ux-goals" class="rc-nav-link">UX Goals</a>
+          <a href="#design-approach" class="rc-nav-link">Design Approach</a>
+          <a href="#information-architecture" class="rc-nav-link">Information Architecture</a>
+          <a href="#ideation" class="rc-nav-link">Ideation</a>
+          <a href="#final-designs" class="rc-nav-link">Final Designs</a>
+          <a href="#before-after" class="rc-nav-link">Before & After</a>
+          <a href="#takeaways" class="rc-nav-link">Takeaways</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="rc-content">
+        <!-- TL;DR Section -->
+        <section id="tldr" class="rc-section" data-animate="fade-up">
+          <div class="rc-tldr">
+            <span class="rc-label">TL;DR</span>
+            <p class="rc-tldr-text">
+              Led the UX/UI redesign of Bid Desk, a loan bidding platform used to view, search, filter, bid on, and pair out loans, aligning the product with Rocket's design system while improving usability, consistency, and task clarity.
+            </p>
+          </div>
+
+          <div class="rc-details-grid">
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">The Problem</span>
+              <p class="rc-detail-value">
+                As Bid Desk grew in usage and complexity, the platform struggled to keep up with how teams actually worked. Users were managing multiple loans, rates, and scenarios at once—but the interface made it difficult to quickly understand, compare, and act on that information.
+              </p>
+            </div>
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">The Details</span>
+              <div class="rc-detail-value">
+                <p><strong>Role:</strong> Senior UX Designer</p>
+                <p><strong>Timeline:</strong> 4 months</p>
+                <p><strong>Team:</strong> Product, Engineering, Sales stakeholders</p>
+                <p><strong>Platform:</strong> Web (Internal Tool)</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Impact / Efficiency -->
+        <section id="impact" class="rc-section rc-section--impact" data-animate="fade-up">
+          <div class="rc-section-header">
+            <h2 class="rc-section-title">Impact / Efficiency</h2>
+            <p class="rc-section-subtitle rc-section-subtitle--left">
+              Improved data discovery, multi-select bidding, and contextual bulk actions reduced friction across everyday Bid Desk tasks.
+            </p>
+          </div>
+
+          <div class="rc-impact-grid">
+            <article class="rc-impact-card">
+              <div class="rc-impact-card-top">
+                <span class="rc-impact-icon">
+                  <span class="rc-impact-glyph rc-impact-glyph--search">
+                    <span class="rc-impact-glyph-box">
+                      <span class="rc-impact-glyph-inner">
+                        <img src="assets/rocket/icons/search.svg" alt="">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="rc-impact-card-body">
+                <h3 class="rc-impact-card-title">Faster loan review</h3>
+                <p class="rc-impact-card-text">Improved table organization reduced the effort needed to find, scan, and evaluate loans.</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card rc-impact-card--wide">
+              <div class="rc-impact-card-top">
+                <span class="rc-impact-icon">
+                  <span class="rc-impact-glyph rc-impact-glyph--filter">
+                    <span class="rc-impact-glyph-box">
+                      <span class="rc-impact-glyph-inner">
+                        <img src="assets/rocket/icons/filter.svg" alt="">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="rc-impact-card-body">
+                <h3 class="rc-impact-card-title">Quicker data discovery</h3>
+                <p class="rc-impact-card-text">Enhanced filtering, searching, and sorting helped users narrow large datasets more efficiently.</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card">
+              <div class="rc-impact-card-top">
+                <span class="rc-impact-icon">
+                  <span class="rc-impact-glyph rc-impact-glyph--shield">
+                    <span class="rc-impact-glyph-box">
+                      <span class="rc-impact-glyph-inner">
+                        <img src="assets/rocket/icons/shield-check.svg" alt="">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="rc-impact-card-body">
+                <h3 class="rc-impact-card-title">Greater confidence</h3>
+                <p class="rc-impact-card-text">Clearer loan details, summaries, and bid states helped users confirm decisions before submitting bids.</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card">
+              <div class="rc-impact-card-top">
+                <span class="rc-impact-icon">
+                  <span class="rc-impact-glyph rc-impact-glyph--list">
+                    <span class="rc-impact-glyph-box">
+                      <span class="rc-impact-glyph-inner">
+                        <img src="assets/rocket/icons/check-list.svg" alt="">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="rc-impact-card-body">
+                <h3 class="rc-impact-card-title">Faster multi-loan bidding</h3>
+                <p class="rc-impact-card-text">Users can select and place bids across multiple loans with less effort.</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card">
+              <div class="rc-impact-card-top">
+                <span class="rc-impact-icon">
+                  <span class="rc-impact-glyph rc-impact-glyph--bolt">
+                    <span class="rc-impact-glyph-box">
+                      <span class="rc-impact-glyph-inner">
+                        <img src="assets/rocket/icons/lightning.svg" alt="">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="rc-impact-card-body">
+                <h3 class="rc-impact-card-title">Streamlined bulk actions</h3>
+                <p class="rc-impact-card-text">Clearer selection states speed up updates across multiple loans.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Discovery Section -->
+        <section id="discovery" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Discovery</h2>
+            <p class="rc-section-subtitle">
+              understanding employee workflows, pain points, and technical needs to build tools that increase efficiency and adoption,
+            </p>
+            <div class="rc-tabs" data-tabs="discovery">
+              <button class="rc-tab rc-tab--active" data-tab="internal">Internal Platform Discovery</button>
+              <button class="rc-tab" data-tab="research">Research & Discovery</button>
+            </div>
+          </div>
+
+          <div class="rc-tab-panels" data-tabs="discovery">
+            <div class="rc-tab-panel rc-tab-panel--active" data-panel="internal">
+              <div class="rc-two-col rc-two-col--discovery">
+                <div class="rc-col rc-col--white">
+                  <span class="rc-label">RESEARCH</span>
+                  <h3 class="rc-col-title">Gathering Insights:</h3>
+                  <p class="rc-col-text">
+                    I began by reviewing the legacy Bid Desk experience, mapping the core workflows users relied on to manage loan requests. Because the product handled dense financial data, the research phase focused on understanding how users reviewed request activity, located specific loan packages, interpreted loan volume, and took actions such as bidding, uploading files, and pairing out/off loans. These insights directly informed the redesign approach.
+                  </p>
+                </div>
+                <div class="rc-col rc-col--gray">
+                  <div class="rc-method-list">
+                    <div class="rc-method-item">Stakeholder and user interviews</div>
+                    <div class="rc-method-item">Existing product audit</div>
+                    <div class="rc-method-item">Workflow review</div>
+                    <div class="rc-method-item">User/task analysis</div>
+                    <div class="rc-method-item">Pain points from internal users or product owners</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="research">
+              <div class="rc-two-col rc-two-col--discovery">
+                <div class="rc-col rc-col--white rc-col--research-copy">
+                  <span class="rc-label">RESEARCH</span>
+                  <h3 class="rc-col-title">From discovery, several themes emerged:</h3>
+                  <ul class="rc-theme-list">
+                    <li>Inconsistent patterns.</li>
+                    <li>Too much data was presented at once, with little visual hierarchy.</li>
+                    <li>Comparing multiple loans or scenarios required mental effort instead of visual clarity.</li>
+                    <li>Poor scalability</li>
+                    <li>Outdated UI and and inconsistent design direction.</li>
+                    <li>Identifying friction points during high-volume tasks</li>
+                  </ul>
+                </div>
+                <div class="rc-col rc-col--gray rc-col--research-visual">
+                  <img src="assets/rocket/research-legacy.png" alt="Legacy Bid Desk dashboard with research callouts" width="646" height="358">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- UX Goals Section -->
+        <section id="ux-goals" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">UX Goals</h2>
+            <p class="rc-section-subtitle">
+              Here is where I focused on progressive disclosure, clear hierarchy, and repeatable patterns.
+            </p>
+          </div>
+
+          <div class="rc-two-col rc-two-col--goals">
+            <div class="rc-col rc-col--white">
+              <span class="rc-label">UX GOALS</span>
+              <h3 class="rc-col-title">Goals That Guided the Redesign:</h3>
+              <p class="rc-col-text">
+                My goal was to improve the overall user experience by making the platform more intuitive, efficient, and scalable. I focused on creating clearer workflows, stronger visual hierarchy, and a structure that could better support future Bid Desk needs.
+              </p>
+            </div>
+            <div class="rc-col rc-col--gray">
+              <ol class="rc-goals-list">
+                <li>Improve scalability of loan request data</li>
+                <li>Clearer hierarchy between page context, filters, summary information, and table content.</li>
+                <li>Align the product with Rocket's design system and brand guidelines.</li>
+                <li>Reduce visual clutter in row-level actions.</li>
+                <li>Make request activity easier to understand at a glance.</li>
+                <li>Create a more scalable dashboard structure for future Bid Desk workflows.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- Design Approach Section -->
+        <section id="design-approach" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Design Approach</h2>
+            <p class="rc-section-subtitle">
+              Here is where I focused on progressive disclosure, clear hierarchy, and repeatable patterns.
+            </p>
+            <div class="rc-tabs" data-tabs="design-approach">
+              <button class="rc-tab rc-tab--active" data-tab="focal-points">Focal Points</button>
+              <button class="rc-tab" data-tab="design-system">Design System</button>
+            </div>
+          </div>
+
+          <div class="rc-tab-panels" data-tabs="design-approach">
+            <div class="rc-tab-panel rc-tab-panel--active" data-panel="focal-points">
+              <div class="rc-two-col rc-two-col--bordered">
+                <div class="rc-col">
+                  <span class="rc-label">UX APPROACH</span>
+                  <h3 class="rc-col-title">Design Strategy:</h3>
+                  <p class="rc-col-text">
+                    My approach focused on auditing the existing experience, mapping key workflows, improving the layout structure, redesigning core interactions, applying the Rocket design system, and refining the solution through feedback and iteration.
+                  </p>
+                </div>
+                <div class="rc-col rc-col--gray">
+                  <div class="rc-steps-list">
+                    <div class="rc-step">
+                      <h4>Step 1: Audited the existing experience</h4>
+                      <p>Reviewed the old interface to identify usability, hierarchy, and consistency issues.</p>
+                    </div>
+                    <div class="rc-step">
+                      <h4>Step 2: Mapped core workflows</h4>
+                      <p>Focused on key actions like reviewing loans, filtering/searching, selecting multiple loans, bidding, and pairing loans out/off.</p>
+                    </div>
+                    <div class="rc-step">
+                      <h4>Step 3: Explored wireframes</h4>
+                      <p>Created early layout ideas to improve structure, hierarchy, and task flow before moving into high-fidelity design.</p>
+                    </div>
+                    <div class="rc-step">
+                      <h4>Step 4: Applied the design system</h4>
+                      <p>Used Rocket's design system and brand guidelines to modernize the interface and create consistency.</p>
+                    </div>
+                    <div class="rc-step">
+                      <h4>Step 5: Refined dashboard interactions</h4>
+                      <p>Improved filters, table layout, status visibility, bulk actions, and bidding flows.</p>
+                    </div>
+                    <div class="rc-step">
+                      <h4>Step 6: Validated with feedback</h4>
+                      <p>Used stakeholder or team feedback to refine the experience and make sure the design supported real workflow needs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="design-system">
+              <div class="rc-media-frame">
+                <img src="assets/rocket/design-system.jpg" alt="Rocket design system styleguide showing colours and typography">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Information Architecture Section -->
+        <section id="information-architecture" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Information Architecture</h2>
+            <p class="rc-section-subtitle">
+              Here is where I focused on progressive disclosure, clear hierarchy, and repeatable patterns.
+            </p>
+          </div>
+
+          <div class="rc-ia-diagram">
+            <div class="rc-ia-badge">Bid Desk Pipeline</div>
+            <div class="rc-ia-tree">
+              <!-- IA Tree Visualization -->
+              <div class="rc-ia-level rc-ia-level--1">
+                <div class="rc-ia-node rc-ia-node--primary">
+                  <span class="rc-ia-num">1.0</span>
+                  <span class="rc-ia-label">Dashboard</span>
+                </div>
+              </div>
+              <div class="rc-ia-level rc-ia-level--2">
+                <div class="rc-ia-node">
+                  <span class="rc-ia-num">2.0</span>
+                  <span class="rc-ia-label">Request ID's</span>
+                  <div class="rc-ia-subnodes">
+                    <span class="rc-ia-num">2.1</span>
+                    <span class="rc-ia-sublabel">Bids</span>
+                    <span class="rc-ia-sublabel">Commitments</span>
+                    <span class="rc-ia-sublabel">File manager</span>
+                    <span class="rc-ia-sublabel">Market</span>
+                  </div>
+                </div>
+                <div class="rc-ia-node">
+                  <span class="rc-ia-num">3.0</span>
+                  <span class="rc-ia-label">New Request</span>
+                </div>
+                <div class="rc-ia-node">
+                  <span class="rc-ia-num">4.0</span>
+                  <span class="rc-ia-label">Edit request</span>
+                </div>
+                <div class="rc-ia-node">
+                  <span class="rc-ia-num">5.0</span>
+                  <span class="rc-ia-label">File uploads</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ideation Section -->
+        <section id="ideation" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Ideation</h2>
+            <p class="rc-section-subtitle">
+              Here is where I focused on progressive disclosure, clear hierarchy, and repeatable patterns.
+            </p>
+            <div class="rc-tabs" data-tabs="ideation">
+              <button class="rc-tab rc-tab--active" data-tab="exploration-1">Exploration 1</button>
+              <button class="rc-tab" data-tab="exploration-2">Exploration 2</button>
+              <button class="rc-tab" data-tab="exploration-3">Exploration 3</button>
+            </div>
+          </div>
+
+          <div class="rc-tab-panels" data-tabs="ideation">
+            <div class="rc-tab-panel rc-tab-panel--active" data-panel="exploration-1">
+              <div class="rc-wireframe-block">
+                <div class="rc-wireframe-content">
+                  <span class="rc-label">V.1</span>
+                  <div class="rc-wireframe-image">
+                    <img src="assets/rocket/wireframe-v1.jpg" alt="Wireframe V1">
+                  </div>
+                </div>
+                <div class="rc-wireframe-notes">
+                  <ul class="rc-checklist rc-checklist--v1">
+                    <li>Rocket Mortgage design system alignment</li>
+                    <li>Standardize actions and components across flows</li>
+                    <li>Grouping related data into scannable sections</li>
+                    <li class="rc-checklist-item--no">The dashboard has several large sections competing for priority</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="exploration-2">
+              <div class="rc-wireframe-block">
+                <div class="rc-wireframe-content">
+                  <span class="rc-label">V.2</span>
+                  <div class="rc-wireframe-image">
+                    <img src="assets/rocket/wireframe-v2.jpg" alt="Wireframe V2">
+                  </div>
+                </div>
+                <div class="rc-wireframe-notes">
+                  <ul class="rc-checklist rc-checklist--v2">
+                    <li>Quick actions are more prominent</li>
+                    <li>Better card structure</li>
+                    <li>Learning resources are easier to discover</li>
+                    <li class="rc-checklist-item--no">The hierarchy prioritizes support content over work content</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="exploration-3">
+              <div class="rc-wireframe-block">
+                <div class="rc-wireframe-content">
+                  <span class="rc-label">V.3</span>
+                  <div class="rc-wireframe-image">
+                    <img src="assets/rocket/wireframe-v3.jpg" alt="Wireframe V3">
+                  </div>
+                </div>
+                <div class="rc-wireframe-notes">
+                  <ul class="rc-checklist rc-checklist--v3">
+                    <li>Better hierarchy overall</li>
+                    <li>Pipeline Requests is finally the focal point</li>
+                    <li>Quick Actions are present without taking over the page</li>
+                    <li>Cleaner separation of primary vs. secondary content</li>
+                    <li class="rc-checklist-item--no">The KPI feels slightly disconnected from the pipeline</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final Designs Section -->
+        <section id="final-designs" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Final Designs</h2>
+          </div>
+
+          <div class="rc-final-designs">
+            <div class="rc-design-card rc-design-card--large">
+              <img src="assets/rocket/final-dashboard.jpg" alt="Final design - Dashboard">
+            </div>
+            <div class="rc-design-grid">
+              <div class="rc-design-card">
+                <img src="assets/rocket/final-search.jpg" alt="Final design - Search">
+              </div>
+              <div class="rc-design-card">
+                <img src="assets/rocket/final-details.jpg" alt="Final design - Details">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Before & After Section -->
+        <section id="before-after" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Before & After</h2>
+            <p class="rc-section-subtitle">
+              understanding employee workflows, pain points, and technical needs to build tools that increase efficiency and adoption,
+            </p>
+            <div class="rc-tabs" data-tabs="before-after">
+              <button class="rc-tab rc-tab--active" data-tab="before">Before</button>
+              <button class="rc-tab" data-tab="after">After</button>
+            </div>
+          </div>
+
+          <div class="rc-tab-panels" data-tabs="before-after">
+            <div class="rc-tab-panel rc-tab-panel--active" data-panel="before">
+              <div class="rc-before-image">
+                <img src="assets/rocket/before.jpg" alt="Before - Legacy Bid Desk interface">
+              </div>
+            </div>
+            <div class="rc-tab-panel" data-panel="after">
+              <div class="rc-before-image">
+                <img src="assets/rocket/after.jpg" alt="After - Redesigned Bid Desk dashboard" width="926" height="661">
+              </div>
+            </div>
+          </div>
+
+          <div class="rc-comparison">
+            <h3 class="rc-comparison-title">Before / After comparison</h3>
+            <table class="rc-comparison-table">
+              <thead>
+                <tr>
+                  <th>Area</th>
+                  <th>Before</th>
+                  <th>After</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Page structure</td>
+                  <td>Table-first experience</td>
+                  <td>Dashboard-style workspace</td>
+                </tr>
+                <tr>
+                  <td>Summary Insights</td>
+                  <td>No KPI summary layer</td>
+                  <td>7 KPI summaries surfaced</td>
+                </tr>
+                <tr>
+                  <td>Data views</td>
+                  <td>Single table view</td>
+                  <td>Table and grid options</td>
+                </tr>
+                <tr>
+                  <td>Time controls</td>
+                  <td>Basic date range and icons</td>
+                  <td>Date module, change period, weekly/monthly toggle</td>
+                </tr>
+                <tr>
+                  <td>Row actions</td>
+                  <td>Multiple visible icons/actions</td>
+                  <td>More centralized zones and improved spacing</td>
+                </tr>
+                <tr>
+                  <td>Visual hierarchy</td>
+                  <td>Minimal separation between content areas</td>
+                  <td>Clear content zones and improved spacing</td>
+                </tr>
+                <tr>
+                  <td>Brand alignment</td>
+                  <td>Legacy Mr.Cooper styling</td>
+                  <td>Rocket Mortgage design system styling</td>
+                </tr>
+                <tr>
+                  <td>Scalability</td>
+                  <td>Minimal separation between content areas</td>
+                  <td>Better foundation for future workflows</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Takeaways Section -->
+        <section id="takeaways" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Takeaways</h2>
+          </div>
+
+          <div class="rc-details-grid">
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">Final thoughts and takeaways</span>
+              <p class="rc-detail-value">
+                This project reinforced the importance of clear hierarchy, scalable design systems, and confident bulk-action workflows in data-heavy financial tools. By simplifying the structure and aligning the experience with Rocket’s design system, the redesign created a stronger foundation for users to review and manage loans more efficiently.
+              </p>
+            </div>
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">Next Steps</span>
+              <p class="rc-detail-value">
+                With more time, I would validate the redesign through usability testing and continue refining the dashboard hierarchy. I would also explore the implementation of quick actions for common tasks like bidding, pairing out loans, and accessing learning tools. To support new users, I would add learning resources, documentation, support, tooltips, and help links to reduce confusion and improve confidence.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="footer-title">Get in touch</h2>
+      <p class="footer-description">
+        Feel free to reach out with any questions or opportunities.
+      </p>
+      <div class="footer-links">
+        <a href="/assets/Peter-Noel-Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Resume</a>
+        <a href="https://www.linkedin.com/in/peter-noel-263903116/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:peterd.noel@gmail.com" class="btn btn-secondary">Email</a>
+      </div>
+    </div>
+    <p class="copyright">Copyright © 2026 Peter Noel. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="js/main.js?v=7"></script>
+  <script src="js/rocket-connect.js?v=7"></script>
+</body>
+</html>

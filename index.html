@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peter Noel - UX/UI Designer with 5+ Years of Experience Bridging Human-Centered Design and AI-Driven Experiences">
+  
+  <title>Peter Noel | UX/UI Designer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=20">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="/" class="logo" aria-label="Home">
+      <svg width="54" height="50" viewBox="0 0 54 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M41 23.4473L40.7324 23.3076L27.5 16.3633V0.896484L53.5 16.9453V49.5H41V23.4473Z" fill="black" stroke="black"/>
+        <path d="M14 23.4473L13.7324 23.3076L0.5 16.3633V0.896484L26.5 16.9453V36.167H14V23.4473Z" fill="black" stroke="black"/>
+        <path d="M13 37.1667V49.4997H0.5V37.1667H13Z" fill="black" stroke="black"/>
+      </svg>
+    </a>
+    
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav-pill" id="site-nav">
+      <a href="/" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About me</a>
+      <a href="mailto:peterd.noel@gmail.com" class="nav-link nav-link--contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">HI, my name is Peter.</h1>
+        <p class="hero-subtitle">
+          UX/UI Designer with 5+ Years of Experience Bridging Human-Centered Design and AI-Driven Experiences.
+        </p>
+      </div>
+      
+      <aside class="hero-meta">
+        <div class="availability-badge">
+          <span>Available for work</span>
+          <span class="pulse-dot"></span>
+        </div>
+        <p class="location">
+          <span>Current location:</span>
+          <span>New Jersey</span>
+        </p>
+      </aside>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="case-studies" id="case-studies">
+      <!-- Case Study 1: Rocket Connect -->
+      <article class="case-study-card" data-animate="fade-up">
+        <div class="case-study-image">
+          <img src="assets/home/rocket-wordmark.svg?v=2" alt="Rocket Mortgage" class="client-logo">
+          <img src="assets/home/rocket-mockup.png?v=2" alt="Rocket Connect project preview" class="mockup">
+        </div>
+        <div class="case-study-content">
+          <h2 class="case-study-title">Rocket Connect</h2>
+          <p class="case-study-description">
+            Bid Desk enables users to efficiently manage, bid, and pair out loan portfolios from selling clients.
+          </p>
+          <a href="rocket-connect.html" class="btn btn-primary">View case study</a>
+        </div>
+      </article>
+
+      <!-- Case Study 2: Origins -->
+      <article class="case-study-card" data-animate="fade-up">
+        <div class="case-study-image">
+          <img src="assets/home/cooper-wordmark.png?v=5" alt="Mr. Cooper" class="client-logo">
+          <img src="assets/home/origins-mockup.png?v=2" alt="Origins project preview" class="mockup">
+        </div>
+        <div class="case-study-content">
+          <h2 class="case-study-title">Cooper Origins — Digital 1003</h2>
+          <p class="case-study-description">
+            A digital mortgage application that guides borrowers through providing the information needed to apply for a home loan.
+          </p>
+          <a href="origins.html" class="btn btn-primary">View case study</a>
+        </div>
+      </article>
+
+      <!-- Case Study 3: Citi Partner Portal -->
+      <article class="case-study-card case-study-card--coming-soon" data-animate="fade-up">
+        <div class="case-study-image">
+          <img src="assets/home/citi-wordmark.svg?v=2" alt="Citibank" class="client-logo client-logo--citi">
+          <img src="assets/home/citi-mockup.png?v=2" alt="Citi Partner Portal preview" class="mockup">
+          <div class="coming-soon-overlay">
+            <span class="coming-soon-text">Coming soon!</span>
+          </div>
+        </div>
+        <div class="case-study-content">
+          <h2 class="case-study-title">Citi Partner Portal</h2>
+          <p class="case-study-description">
+            Partnerships Portal is a dedicated space for partners and internal Citi teams to be able to track performance, and evaluate success of Citi partnerships through business, product and technology-driven metrics.
+          </p>
+          <button type="button" class="btn btn-disabled" disabled>View case study</button>
+        </div>
+      </article>
+
+      <!-- Case Study 4: Mr.Cooper Design System -->
+      <article class="case-study-card case-study-card--coming-soon" data-animate="fade-up">
+        <div class="case-study-image">
+          <img src="assets/home/cooper-wordmark.png?v=5" alt="Mr. Cooper" class="client-logo">
+          <img src="assets/home/design-system-mockup.png?v=2" alt="Mr.Cooper Design System preview" class="mockup">
+          <div class="coming-soon-overlay">
+            <span class="coming-soon-text">Coming soon!</span>
+          </div>
+        </div>
+        <div class="case-study-content">
+          <h2 class="case-study-title">Mr.Cooper Design System</h2>
+          <p class="case-study-description">
+            A shared library of reusable components, patterns, and standards for building consistent digital experiences across Mr. Cooper.
+          </p>
+          <button type="button" class="btn btn-disabled" disabled>View case study</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="footer-title">Get in touch</h2>
+      <p class="footer-description">
+        Feel free to reach out with any questions or opportunities.
+      </p>
+      <div class="footer-links">
+        <a href="/assets/Peter-Noel-Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Resume</a>
+        <a href="https://www.linkedin.com/in/peter-noel-263903116/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:peterd.noel@gmail.com" class="btn btn-secondary">Email</a>
+      </div>
+    </div>
+    <p class="copyright">Copyright © 2026 Peter Noel. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js?v=7"></script>
+</body>
+</html>

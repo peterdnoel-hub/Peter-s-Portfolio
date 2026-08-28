@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Origins / Digital 1003 Case Study — Designing a scalable co-borrower experience for Mr. Cooper by Peter Noel">
+
+  <title>Origins | Digital 1003 | Peter Noel</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=20">
+  <link rel="stylesheet" href="css/rocket-connect.css?v=42">
+  <link rel="stylesheet" href="css/origins.css?v=31">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="/" class="logo" aria-label="Home">
+      <svg width="54" height="50" viewBox="0 0 54 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M41 23.4473L40.7324 23.3076L27.5 16.3633V0.896484L53.5 16.9453V49.5H41V23.4473Z" fill="black" stroke="black"/>
+        <path d="M14 23.4473L13.7324 23.3076L0.5 16.3633V0.896484L26.5 16.9453V36.167H14V23.4473Z" fill="black" stroke="black"/>
+        <path d="M13 37.1667V49.4997H0.5V37.1667H13Z" fill="black" stroke="black"/>
+      </svg>
+    </a>
+
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav-pill" id="site-nav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About me</a>
+      <a href="mailto:peterd.noel@gmail.com" class="nav-link nav-link--contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="rc-page">
+    <!-- Hero Section -->
+    <section class="rc-hero" data-animate="fade-up">
+      <img class="rc-hero-image" src="assets/origins/hero.png?v=3" alt="Digital 1003 mortgage application with co-borrower and vesting type panel">
+    </section>
+
+    <!-- Content with Sidebar -->
+    <div class="rc-layout">
+      <!-- Sticky Sidebar Navigation -->
+      <aside class="rc-sidebar">
+        <nav class="rc-nav">
+          <a href="#tldr" class="rc-nav-link active">TL;DR</a>
+          <a href="#discovery" class="rc-nav-link">Discovery</a>
+          <a href="#ux-goals" class="rc-nav-link">UX Goals</a>
+          <a href="#design-approach" class="rc-nav-link">Design Approach</a>
+          <a href="#ideation" class="rc-nav-link">Ideation</a>
+          <a href="#final-designs" class="rc-nav-link">Final Designs</a>
+          <a href="#takeaways" class="rc-nav-link">Takeaways</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="rc-content">
+        <!-- TL;DR Section -->
+        <section id="tldr" class="rc-section" data-animate="fade-up">
+          <div class="rc-tldr">
+            <span class="rc-label">TL;DR</span>
+            <p class="rc-tldr-text">
+              I led the design of a scalable Digital 1003 co-borrower experience that helped applicants and loan officers add, organize, and manage borrower pairs more clearly within the mortgage application flow.
+            </p>
+          </div>
+
+          <div class="rc-details-grid">
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">The Problem</span>
+              <p class="rc-detail-value">
+                The existing borrower flow did not fully support the complexity of mortgage applications involving multiple borrowers. Loan officers and applicants needed a clearer way to add co-borrowers, organize borrower relationships, and manage borrower pairs without creating confusion or compliance risk.
+              </p>
+            </div>
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">The Details</span>
+              <div class="rc-detail-value">
+                <p><strong>Role:</strong> Senior UX Designer</p>
+                <p><strong>Timeline:</strong> 3 months</p>
+                <p><strong>Product:</strong> Digital 1003 Mortgage Application</p>
+                <p><strong>Platform:</strong> Web (Internal Tool)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Impact / Efficiency -->
+        <section id="impact" class="rc-section rc-section--impact" data-animate="fade-up">
+          <div class="rc-section-header">
+            <h2 class="rc-section-title">Impact / Efficiency</h2>
+            <p class="rc-section-subtitle rc-section-subtitle--left">
+              By simplifying complex multi-borrower workflows, the redesign supported a more efficient application experience. Post-launch reporting showed stronger application productivity, lock volume, and lead-to-lock conversion across the broader Origins platform.
+            </p>
+          </div>
+
+          <div class="og-impact-grid">
+            <article class="rc-impact-card og-impact-card--story">
+              <div class="rc-impact-card-top">
+                <span class="rc-impact-icon">
+                  <span class="rc-impact-glyph rc-impact-glyph--filter">
+                    <span class="rc-impact-glyph-box">
+                      <span class="rc-impact-glyph-inner">
+                        <img src="assets/origins/filter.svg" alt="">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="rc-impact-card-body">
+                <h3 class="rc-impact-card-title">A streamlined experience with measurable outcomes</h3>
+                <p class="rc-impact-card-text">The Managing Borrowers redesign reduced complexity within multi-borrower applications. Following the larger Origins rollout, operational reporting showed stronger application productivity, lock activity, and conversion across the lending funnel.</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card og-impact-card--metric">
+              <div class="rc-impact-card-body">
+                <p class="og-impact-stat">+58%</p>
+                <p class="og-impact-stat-label">Lead-to-fund</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card og-impact-card--metric">
+              <div class="rc-impact-card-body">
+                <p class="og-impact-stat">+66%</p>
+                <p class="og-impact-stat-label">Locks per day</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card og-impact-card--metric">
+              <div class="rc-impact-card-body">
+                <p class="og-impact-stat">+30%</p>
+                <p class="og-impact-stat-label">Lead-to-lock</p>
+              </div>
+            </article>
+
+            <article class="rc-impact-card og-impact-card--metric">
+              <div class="rc-impact-card-body">
+                <p class="og-impact-stat">+55%</p>
+                <p class="og-impact-stat-label">Applications/day</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Discovery Section -->
+        <section id="discovery" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Discovery</h2>
+            <p class="rc-section-subtitle">
+              understanding employee workflows, pain points, and technical needs to build tools that increase efficiency and adoption,
+            </p>
+            <div class="rc-tabs" data-tabs="discovery">
+              <button class="rc-tab rc-tab--active" data-tab="internal">Internal Platform Discovery</button>
+              <button class="rc-tab" data-tab="competitive">Competitive Analysis</button>
+            </div>
+          </div>
+
+          <div class="rc-tab-panels" data-tabs="discovery">
+            <div class="rc-tab-panel rc-tab-panel--active" data-panel="internal">
+              <div class="rc-two-col rc-two-col--discovery">
+                <div class="rc-col rc-col--white">
+                  <span class="rc-label">RESEARCH</span>
+                  <h3 class="rc-col-title">Gathering Insights:</h3>
+                  <p class="rc-col-text">
+                    To understand the complexity of the feature, I reviewed the existing application flow, mapped borrower scenarios, and worked with product and mortgage stakeholders to identify key requirements. A major focus was understanding how borrower relationships needed to be represented both visually in the product and structurally in the application data.
+                  </p>
+                </div>
+                <div class="rc-col rc-col--gray">
+                  <div class="rc-method-list">
+                    <div class="rc-method-item">Stakeholder and user interviews</div>
+                    <div class="rc-method-item">Existing product audit</div>
+                    <div class="rc-method-item">Mortgage application requirements</div>
+                    <div class="rc-method-item">Loan officer workflow review</div>
+                    <div class="rc-method-item">Compliance and AUS considerations</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="competitive">
+              <div class="rc-two-col rc-two-col--discovery">
+                <div class="rc-col rc-col--white">
+                  <span class="rc-label">RESEARCH</span>
+                  <h3 class="rc-col-title">Competitive Analysis:</h3>
+                  <p class="rc-col-text">
+                    To better understand how multi-borrower scenarios are handled across the mortgage application space, I reviewed Encompass, Blend, Zinc, and Bankrate. The goal was not to copy an existing pattern, but to identify how other platforms introduced borrower information, explained co-borrower responsibilities, and supported more complex application structures.
+                  </p>
+                </div>
+                <div class="rc-col rc-col--gray">
+                  <div class="og-competitor-list">
+                    <div class="og-competitor">
+                      <img class="og-competitor-mark og-competitor-mark--encompass" src="assets/origins/competitors/encompass.svg" alt="" width="50" height="50">
+                      <span>Encompass</span>
+                    </div>
+                    <div class="og-competitor">
+                      <img class="og-competitor-mark og-competitor-mark--amc" src="assets/origins/competitors/amc.png" alt="Alameda Mortgage Corp">
+                    </div>
+                    <div class="og-competitor">
+                      <img class="og-competitor-mark og-competitor-mark--bankrate" src="assets/origins/competitors/bankrate.png" alt="" width="58" height="61">
+                      <span>Bankrate</span>
+                    </div>
+                    <div class="og-competitor">
+                      <img class="og-competitor-mark og-competitor-mark--zinc" src="assets/origins/competitors/zinc.png" alt="" width="72" height="72">
+                      <span>Zinc Solutions</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- UX Goals Section -->
+        <section id="ux-goals" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">UX Goals</h2>
+            <p class="rc-section-subtitle">
+              Here is where I focused on progressive disclosure, clear hierarchy, and repeatable patterns.
+            </p>
+          </div>
+
+          <div class="rc-two-col rc-two-col--goals">
+            <div class="rc-col rc-col--white">
+              <span class="rc-label">UX GOALS</span>
+              <h3 class="rc-col-title">Goals That Guided the Redesign:</h3>
+              <p class="rc-col-text">
+                My goal was to improve the overall user experience by making the platform more intuitive, efficient, and scalable. I focused on creating clearer workflows, stronger visual hierarchy, and a structure that could better support future Digital 1003 needs.
+              </p>
+            </div>
+            <div class="rc-col rc-col--gray">
+              <ol class="rc-goals-list">
+                <li>Make adding co-borrowers easier</li>
+                <li>Clarify borrower relationships</li>
+                <li>Reduce loan officer confusion</li>
+                <li>Support compliance and AUS needs</li>
+                <li>Create a scalable flow</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- Design Approach Section -->
+        <section id="design-approach" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Design Approach</h2>
+            <p class="rc-section-subtitle">
+              Here is where I focused on progressive disclosure, clear hierarchy, and repeatable patterns.
+            </p>
+            <div class="rc-tabs" data-tabs="design-approach">
+              <button class="rc-tab rc-tab--active" data-tab="focal-points">Focal Points</button>
+              <button class="rc-tab" data-tab="sitemap">Sitemap &amp; User Scenarios</button>
+            </div>
+          </div>
+
+          <div class="rc-tab-panels" data-tabs="design-approach">
+            <div class="rc-tab-panel rc-tab-panel--active" data-panel="focal-points">
+              <div class="rc-two-col">
+                <div class="rc-col rc-col--white">
+                  <span class="rc-label">UX APPROACH</span>
+                  <h3 class="rc-col-title">Design Strategy:</h3>
+                  <p class="rc-col-text">
+                    During early exploration, I tested different ways to represent borrower relationships, including list-based structures, grouped cards, and step-based flows. The design needed to make complex borrower logic feel simple without hiding important details from loan officers.
+                  </p>
+                </div>
+                <div class="rc-col rc-col--gray">
+                  <div class="rc-steps-list">
+                    <div class="rc-step og-step">
+                      <h4>Step 1: Mapped borrower flows from entry point to review</h4>
+                    </div>
+                    <div class="rc-step og-step">
+                      <h4>Step 2: Defined how co-borrowers would be added and grouped</h4>
+                    </div>
+                    <div class="rc-step og-step">
+                      <h4>Step 3: Designed borrower pair cards to improve visibility</h4>
+                    </div>
+                    <div class="rc-step og-step">
+                      <h4>Step 4: Created clear hierarchy between primary borrower, co-borrower, and pair details</h4>
+                    </div>
+                    <div class="rc-step og-step">
+                      <h4>Step 5: Reduced cognitive load by breaking complex borrower logic into manageable steps</h4>
+                    </div>
+                    <div class="rc-step og-step">
+                      <h4>Step 6: Partnered with product and engineering to validate edge cases</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="sitemap">
+              <div class="og-sitemap-layout">
+                <div class="og-sitemap-frame">
+                  <img src="assets/origins/sitemap-flow.png" alt="Digital 1003 borrower management sitemap from the Digital 1003 interface through add co-borrower and add borrower pair flows">
+                </div>
+                <div class="og-scenarios">
+                  <h3 class="og-scenarios-title">Key User Scenarios</h3>
+                  <div class="og-sticky-grid">
+                    <div class="og-sticky og-sticky--mint">
+                      <p>Single borrower adds one co-borrower</p>
+                      <span class="og-sticky-author">Peter Noel</span>
+                    </div>
+                    <div class="og-sticky og-sticky--mint">
+                      <p>Married couple applying together</p>
+                      <span class="og-sticky-author">Peter Noel</span>
+                    </div>
+                    <div class="og-sticky og-sticky--blue">
+                      <p>Multiple co-borrowers on one loan</p>
+                      <span class="og-sticky-author">Peter Noel</span>
+                    </div>
+                    <div class="og-sticky og-sticky--blue">
+                      <p>Two borrower pairs within the same application</p>
+                      <span class="og-sticky-author">Peter Noel</span>
+                    </div>
+                    <div class="og-sticky og-sticky--salmon">
+                      <p>Loan officer reviews and edits borrower details</p>
+                      <span class="og-sticky-author">Peter Noel</span>
+                    </div>
+                    <div class="og-sticky og-sticky--salmon">
+                      <p>Borrower information needs to flow into AUS/compliance systems</p>
+                      <span class="og-sticky-author">Peter Noel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ideation Section -->
+        <section id="ideation" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Ideation</h2>
+            <p class="rc-section-subtitle">
+              Here is where I focused on progressive disclosure, clear hierarchy, and repeatable patterns.
+            </p>
+            <div class="rc-tabs" data-tabs="ideation">
+              <button class="rc-tab rc-tab--active" data-tab="exploration-1">Exploration 1</button>
+              <button class="rc-tab" data-tab="exploration-2">Exploration 2</button>
+              <button class="rc-tab" data-tab="exploration-3">Exploration 3</button>
+            </div>
+          </div>
+
+          <div class="rc-tab-panels" data-tabs="ideation">
+            <div class="rc-tab-panel rc-tab-panel--active" data-panel="exploration-1">
+              <div class="rc-wireframe-block">
+                <div class="rc-wireframe-content">
+                  <span class="rc-label">V.1</span>
+                  <div class="og-wireframe-image">
+                    <img src="assets/origins/ideation-v1.png?v=2" alt="Cooper dashboard with stacked Adding Borrower Pair modal, pair selection, and vesting type panel">
+                  </div>
+                </div>
+                <div class="rc-wireframe-notes">
+                  <ul class="rc-checklist og-checklist">
+                    <li>Makes borrower pairs more visible</li>
+                    <li>Supports scalability</li>
+                    <li>Good use of progressive disclosure</li>
+                    <li class="rc-checklist-item--no">There are too many competing layers</li>
+                    <li class="rc-checklist-item--no">Side panel may introduce cognitive overload</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="exploration-2">
+              <div class="rc-wireframe-block">
+                <div class="rc-wireframe-content">
+                  <span class="rc-label">V.2</span>
+                  <div class="og-wireframe-image">
+                    <img class="og-wireframe-image-main" src="assets/origins/ideation-v2.jpg?v=2" alt="Manage Borrowers exploration with borrower pairs table and side-by-side borrower details">
+                  </div>
+                </div>
+                <div class="rc-wireframe-notes">
+                  <ul class="rc-checklist og-checklist">
+                    <li>Familiar enterprise pattern</li>
+                    <li>Clear separation of sections</li>
+                    <li>Side-by-side comparison is helpful</li>
+                    <li class="rc-checklist-item--no">Weak visual hierarchy</li>
+                    <li class="rc-checklist-item--no">Feels heavy and overwhelming</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="rc-tab-panel" data-panel="exploration-3">
+              <div class="rc-wireframe-block">
+                <div class="rc-wireframe-content">
+                  <span class="rc-label">V.3</span>
+                  <div class="og-wireframe-image">
+                    <img src="assets/origins/ideation-v3.jpg" alt="Digital 1003 application with co-borrower vesting type selection inside the form context">
+                  </div>
+                </div>
+                <div class="rc-wireframe-notes">
+                  <ul class="rc-checklist og-checklist">
+                    <li>The user stays in the form context</li>
+                    <li>Less visual competition</li>
+                    <li>The relationship is easier to understand</li>
+                    <li>Stronger connection between action and outcome</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final Designs Section -->
+        <section id="final-designs" class="rc-section og-final-design" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Final Designs</h2>
+          </div>
+
+          <div class="rc-final-designs">
+            <div class="rc-design-card rc-design-card--large">
+              <video class="og-final-video" src="assets/origins/final-designs.mp4" autoplay muted loop playsinline controls poster="assets/origins/final-uae.jpg">
+                Final Digital 1003 application walkthrough
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Takeaways Section -->
+        <section id="takeaways" class="rc-section" data-animate="fade-up">
+          <div class="rc-section-header rc-section-header--centered">
+            <h2 class="rc-section-title">Takeaways</h2>
+          </div>
+
+          <div class="rc-details-grid">
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">Final thoughts and takeaways</span>
+              <p class="rc-detail-value">
+                The next phase would focus on validating the experience with loan officers and operations teams using realistic borrower scenarios. I would measure task completion, setup errors, and the time required to add co-borrowers, create borrower pairs, and assign vesting types. These findings would help identify opportunities to refine the workflow before expanding it across the broader digital 1003 application.
+              </p>
+            </div>
+            <div class="rc-detail-row">
+              <span class="rc-detail-label">Next Steps</span>
+              <p class="rc-detail-value">
+                I would explore quick actions for editing or reorganizing borrower pairs. I would also introduce learning resources or tooltips to help new users understand vesting types and complex borrower structures without interrupting the primary workflow.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="footer-title">Get in touch</h2>
+      <p class="footer-description">
+        Feel free to reach out with any questions or opportunities.
+      </p>
+      <div class="footer-links">
+        <a href="/assets/Peter-Noel-Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Resume</a>
+        <a href="https://www.linkedin.com/in/peter-noel-263903116/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:peterd.noel@gmail.com" class="btn btn-secondary">Email</a>
+      </div>
+    </div>
+    <p class="copyright">Copyright © 2026 Peter Noel. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="js/main.js?v=7"></script>
+  <script src="js/rocket-connect.js?v=7"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "mode": "edit",
+  "componentId": "438347616913342464",
+  "projectId": "437598301894885376",
+  "selectedRevisionId": "438347616913342465",
+  "jobId": "417272017960734720-external-agent-438348729448296448",
+  "generatedName": "happily-town-9550",
+  "name": "Ridgeframe Landing",
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "5a707f5581935bc644a24977374973d991e8339d67067bad789ea07b2f15ad78"
+    },
+    {
+      "path": "src/components/generated/RidgeframeLanding.tsx",
+      "sha256": "d8a13ee75b95601d8beb84cca9bca314aa0ce3d8456fcaf538d0a3e2a8223a8c"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "7f513812bea1e67b46124fc4dc53e4d12d4d790c193a989242521484d51d6df7"
+    }
+  ],
+  "baseRevisionId": "438347616913342465"
+}

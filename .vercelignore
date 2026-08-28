@@ -1,0 +1,14 @@
+.DS_Store
+.vercel
+.env
+.env.*
+node_modules
+*.log
+css/.magicpath
+css/.agents
+.cursor
+styles.css
+script.js
+case-study.html
+js/case-study.js
+css/case-study.css

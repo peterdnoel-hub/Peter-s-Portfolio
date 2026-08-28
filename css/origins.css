@@ -1,0 +1,431 @@
+/* ========================================
+   Origins / Digital 1003 Case Study
+   Extends rocket-connect.css patterns
+   ======================================== */
+
+/* ========================================
+   Discovery — Research / Gathering Insights
+   Figma 851:23987 — hug content, do not stretch
+   to the Competitive Analysis tab height.
+   ======================================== */
+#discovery .rc-tab-panels {
+  display: block;
+}
+
+#discovery .rc-tab-panel {
+  display: none;
+  grid-area: auto;
+}
+
+#discovery .rc-tab-panel--active {
+  display: flex;
+}
+
+#discovery .rc-tab-panel .rc-two-col {
+  height: auto;
+}
+
+#discovery .rc-two-col--discovery {
+  grid-template-columns: 534px minmax(0, 1fr);
+}
+
+#discovery .rc-col--white {
+  padding: 40px;
+}
+
+#discovery .rc-col--gray {
+  padding: 40px 48px;
+  justify-content: flex-start;
+}
+
+#discovery .rc-col--white .rc-label {
+  margin-bottom: 24px;
+}
+
+#discovery .rc-col-title {
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+#discovery .rc-tab-panel[data-panel="internal"] .rc-col-text {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+#discovery .rc-method-list {
+  gap: 24px;
+  width: 100%;
+}
+
+#discovery .rc-method-item {
+  padding: 10px 24px;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 49px;
+}
+
+/* ========================================
+   Discovery — Competitive Analysis
+   Figma 1318:13670
+   ======================================== */
+#discovery .rc-tab-panel[data-panel="competitive"] .rc-col-text {
+  font-size: 24px;
+  line-height: 45px;
+}
+
+#discovery .rc-tab-panel[data-panel="competitive"] .rc-col--gray {
+  justify-content: center;
+}
+
+.og-competitor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  width: 100%;
+}
+
+.og-competitor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 80px;
+  min-height: 80px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 100px;
+  padding: 8px 44px 8px 24px;
+  font-size: 24px;
+  font-weight: var(--weight-medium);
+  line-height: 1;
+  color: #000000;
+}
+
+.og-competitor-mark {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.og-competitor-mark--encompass {
+  width: 42px;
+  height: 42px;
+}
+
+.og-competitor-mark--amc {
+  height: 52px;
+  width: auto;
+  max-width: 220px;
+}
+
+.og-competitor-mark--bankrate {
+  width: 48px;
+  height: 50px;
+  mix-blend-mode: multiply;
+}
+
+.og-competitor-mark--zinc {
+  width: 52px;
+  height: 52px;
+  mix-blend-mode: multiply;
+}
+
+/* ========================================
+   Design Approach — consistent height tabs
+   Panels stay stacked in one grid cell (see
+   .rc-tab-panels in rocket-connect.css) so the
+   container takes the height of the tallest
+   panel and both tabs match.
+   ======================================== */
+#design-approach .rc-tab-panels {
+  min-height: 660px;
+}
+
+#design-approach .rc-tab-panel .og-sitemap-layout {
+  flex: 1;
+  height: 100%;
+  align-self: stretch;
+  align-content: center;
+  align-items: center;
+}
+
+#design-approach .rc-tab-panel[data-panel="focal-points"] .rc-two-col {
+  grid-template-columns: 534px minmax(0, 1fr);
+  border: 1px solid #e3e3e3;
+  border-radius: 24px;
+}
+
+#design-approach .rc-tab-panel[data-panel="focal-points"] .rc-col--white {
+  padding: 40px;
+  border: none;
+  border-radius: 24px 0 0 24px;
+}
+
+#design-approach .rc-tab-panel[data-panel="focal-points"] .rc-col--gray {
+  padding: 40px 48px;
+  justify-content: center;
+  border: none;
+  border-radius: 0 24px 24px 0;
+}
+
+#design-approach .rc-tab-panel[data-panel="focal-points"] .rc-label {
+  margin-bottom: 24px;
+}
+
+#design-approach .rc-tab-panel[data-panel="focal-points"] .rc-col-title {
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+#design-approach .rc-tab-panel[data-panel="focal-points"] .rc-col-text {
+  font-size: 24px;
+  line-height: 41px;
+}
+
+#design-approach .rc-steps-list {
+  gap: 16px;
+  width: 100%;
+}
+
+#design-approach .rc-step {
+  padding: 10px 16px;
+  border-radius: 16px;
+}
+
+#design-approach .rc-step h4 {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+  line-height: 35px;
+}
+
+/* ========================================
+   Impact / Efficiency — metric cards
+   ======================================== */
+.og-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.og-impact-card--story {
+  grid-column: span 2;
+}
+
+.og-impact-card--metric {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 278px;
+}
+
+.og-impact-stat {
+  font-size: 74px;
+  font-weight: var(--weight-medium);
+  line-height: 1.25;
+}
+
+.og-impact-stat-label {
+  font-size: 24px;
+  font-weight: var(--weight-light);
+  color: var(--color-text-secondary);
+  line-height: 32px;
+}
+
+.og-impact-card--metric .rc-impact-card-body {
+  margin-top: 0;
+  width: 100%;
+}
+
+/* ========================================
+   Design approach — title-only steps
+   ======================================== */
+.og-step h4 {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   Ideation wireframe + overlay
+   ======================================== */
+.og-wireframe-image {
+  position: relative;
+  margin-top: var(--space-lg);
+}
+
+.og-wireframe-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 14.1px rgba(0, 0, 0, 0.16);
+  display: block;
+}
+
+.og-wireframe-image-main {
+  mix-blend-mode: luminosity;
+}
+
+/* All three ideation panels share one height and the portrait V.2 screenshot
+   sets it. V.1 and V.3 are landscape, so their image column is widened to let
+   them scale up closer to that height. The ratio stops short of a perfect fill
+   so the checklist keeps a readable measure. */
+#ideation .rc-tab-panel[data-panel="exploration-1"] .rc-wireframe-block,
+#ideation .rc-tab-panel[data-panel="exploration-3"] .rc-wireframe-block {
+  grid-template-columns: 2.7fr minmax(0, 1fr);
+}
+
+.og-checklist li::before {
+  background-image: url("../assets/origins/check.svg");
+}
+
+.og-checklist .rc-checklist-item--no::before {
+  background-image: url("../assets/origins/x.svg");
+}
+
+/* ========================================
+   Final design
+   ======================================== */
+/* ========================================
+   Sitemap & User Scenarios
+   Figma 1400:2561
+   ======================================== */
+.og-sitemap-layout {
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 24px;
+  padding: 48px 60px;
+  display: grid;
+  grid-template-columns: 420px 520px;
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+}
+
+.og-sitemap-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
+}
+
+.og-scenarios {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.og-scenarios-title {
+  font-size: 22px;
+  font-weight: var(--weight-medium);
+  font-style: italic;
+  color: #000000;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.og-sticky-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.og-sticky {
+  aspect-ratio: 1;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.og-sticky p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.og-sticky-author {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.og-sticky--mint { background: #b3f4ef; }
+.og-sticky--blue { background: #a8daff; }
+.og-sticky--salmon { background: #ffafa3; }
+
+.og-final-design .rc-design-card--large {
+  padding: 0;
+  background: transparent;
+}
+
+.og-final-design .rc-design-card--large img,
+.og-final-design .rc-design-card--large video {
+  border: none;
+  border-radius: 20px;
+}
+
+.og-final-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 1200px) {
+  #discovery .rc-two-col--discovery,
+  #design-approach .rc-tab-panel[data-panel="focal-points"] .rc-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  #discovery .rc-col--gray,
+  #design-approach .rc-tab-panel[data-panel="focal-points"] .rc-col--gray {
+    padding: 40px;
+  }
+
+  .og-impact-card--story {
+    grid-column: auto;
+  }
+
+  .og-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .og-sitemap-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .og-impact-stat {
+    font-size: 56px;
+  }
+
+  /* Widened image columns collapse with the rest of the wireframe blocks */
+  #ideation .rc-tab-panel[data-panel="exploration-1"] .rc-wireframe-block,
+  #ideation .rc-tab-panel[data-panel="exploration-3"] .rc-wireframe-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .og-competitor {
+    min-height: 64px;
+    height: 64px;
+    gap: 14px;
+    padding: 6px 24px 6px 16px;
+    font-size: 22px;
+  }
+
+  .og-impact-stat {
+    font-size: 48px;
+  }
+
+  .og-impact-stat-label {
+    font-size: 18px;
+  }
+}

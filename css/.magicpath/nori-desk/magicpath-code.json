@@ -1,0 +1,29 @@
+{
+  "mode": "edit",
+  "componentId": "438347683116253184",
+  "projectId": "437598301894885376",
+  "selectedRevisionId": "438347683116253185",
+  "jobId": "417272017960734720-external-agent-438348754941263872",
+  "generatedName": "friendly-stone-9467",
+  "name": "Nori Desk Landing",
+  "dimensions": {
+    "width": 1440,
+    "height": 900
+  },
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "dc626a261ad8fa45a1890ccdfcbb4b3fa59150c8830972d00ad3f8e6ee555400"
+    },
+    {
+      "path": "src/components/generated/NoriDeskLanding.tsx",
+      "sha256": "890c85ee835e5099917ba6a06c8fc1a2d3e106bbb2fd584ea79dce18edfb7ffd"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "a44e38f2808e5acab88c1f5c26c781b3ea1d670a0dae76dc5b1025fb7d32c384"
+    }
+  ],
+  "baseRevisionId": "438347683116253185"
+}

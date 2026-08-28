@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Peter Noel — UX designer based in New York, NY">
+
+  <title>About me | Peter Noel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css?v=20">
+  <link rel="stylesheet" href="css/about.css?v=1">
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="logo" aria-label="Home">
+      <svg width="54" height="50" viewBox="0 0 54 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M41 23.4473L40.7324 23.3076L27.5 16.3633V0.896484L53.5 16.9453V49.5H41V23.4473Z" fill="black" stroke="black"/>
+        <path d="M14 23.4473L13.7324 23.3076L0.5 16.3633V0.896484L26.5 16.9453V36.167H14V23.4473Z" fill="black" stroke="black"/>
+        <path d="M13 37.1667V49.4997H0.5V37.1667H13Z" fill="black" stroke="black"/>
+      </svg>
+    </a>
+
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav-pill" id="site-nav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About me</a>
+      <a href="mailto:peterd.noel@gmail.com" class="nav-link nav-link--contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about" data-animate="fade-up">
+      <div class="about-copy">
+        <h1 class="about-title">About me</h1>
+        <p class="about-body">
+          Hi, my name is Peter Noel! I am a user experience designer currently based in New York, NY. My background in photography and graphic design has influenced my ability to comprehend and inspire my audiences through visual creativity. My overall passion for art has allowed me to develop a keen eye for detail that helps me create meaningful experiences through design. As a natural problem-solver, I am able to identify difficulties, recognize pain points, and produce user-friendly solutions. When I am not designing, you can find me enjoying video games, traveling the world &amp; consuming large amounts of coffee.
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="assets/about-photo.png" alt="Peter Noel" width="635" height="847">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="footer-title">Get in touch</h2>
+      <p class="footer-description">
+        Feel free to reach out with any questions or opportunities.
+      </p>
+      <div class="footer-links">
+        <a href="/assets/Peter-Noel-Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Resume</a>
+        <a href="https://www.linkedin.com/in/peter-noel-263903116/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:peterd.noel@gmail.com" class="btn btn-secondary">Email</a>
+      </div>
+    </div>
+    <p class="copyright">Copyright © 2026 Peter Noel. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js?v=7"></script>
+</body>
+</html>
