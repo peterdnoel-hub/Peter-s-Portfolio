@@ -7,8 +7,8 @@ node_modules
 css/.magicpath
 css/.agents
 .cursor
-styles.css
-script.js
+/styles.css
+/script.js
 case-study.html
 js/case-study.js
 css/case-study.css
