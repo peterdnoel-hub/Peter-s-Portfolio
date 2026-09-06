@@ -20,6 +20,8 @@ Open [http://localhost:8000](http://localhost:8000).
 
 `vercel.json` enables clean URLs (`/about` also works in production) and a 404 page. Local `python3 -m http.server` still uses `about.html`, `rocket-connect.html`, and `origins.html`.
 
+The previous Webflow portfolio is a static copy at `/previous/`. After deploying, you can unpublish the Webflow site.
+
 After the first deploy, every push to the production branch updates the live site.
 
 ## Pages
@@ -30,6 +32,7 @@ After the first deploy, every push to the production branch updates the live sit
 | `/about` | `about.html` |
 | `/rocket-connect` | `rocket-connect.html` |
 | `/origins` | `origins.html` |
+| `/previous/` | `previous/index.html` |
 
 ## License
 
